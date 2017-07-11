@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+# do not keep public file
+public/

@@ -1,0 +1,75 @@
+// style.scss ----------------------------
+// This is a starting point where we call all of our Sass partials
+// We can import our own partials in the relevant locations/layers.
+// We name them in the _<layer>.<file>.scss format.
+// This stylesheet is organised in shearing layers—a concept coined by
+// architect Frank Duffy which was later elaborated by Stewart Brand in his
+// book How Buildings Learn: What Happens After They’re Built (Brand, 1994),
+// and refers to buildings as composed of several layers of change.
+// ---------------------------------------
+// The concept of Shearing Layers can be adopted to architect CSS into
+// layers of decreasing scope (inverted pyramid):
+// 1.  Settings: Sass vars, etc.
+// 2.  Tools: Functions and mixins.
+// 3.  Generic: Generic, high-level styling, like resets, etc.
+// 4.  Base: Unclasses HTML elements (e.g. `h2`, `ul`).
+// 5.  Object: Objects and abstractions.
+// 6.  Components: Your designed UI elements (inuitcss includes none of these).
+// 7.  Trumps: Overrides and helper classes.
+
+
+// Settings ------------------------------
+// ---------------------------------------
+
+@import 'govuk_frontend_toolkit/stylesheets/colours';
+@import 'govuk_frontend_toolkit/stylesheets/font_stack';
+@import 'govuk_frontend_toolkit/stylesheets/measurements';
+
+// Tools----------------------------------
+// ---------------------------------------
+
+@import 'govuk_frontend_toolkit/stylesheets/conditionals';
+@import 'govuk_frontend_toolkit/stylesheets/css3';
+@import 'govuk_frontend_toolkit/stylesheets/device-pixels';
+@import 'govuk_frontend_toolkit/stylesheets/grid_layout';
+@import 'govuk_frontend_toolkit/stylesheets/helpers';
+@import 'govuk_frontend_toolkit/stylesheets/shims';
+@import 'govuk_frontend_toolkit/stylesheets/typography';
+@import 'govuk_frontend_toolkit/stylesheets/url-helpers';
+@import 'govuk_frontend_toolkit/stylesheets/design-patterns/alpha-beta';
+@import 'govuk_frontend_toolkit/stylesheets/design-patterns/breadcrumbs';
+@import 'govuk_frontend_toolkit/stylesheets/design-patterns/buttons';
+@import 'govuk_frontend_toolkit/stylesheets/design-patterns/media-player';
+@import 'govuk-elements-sass/public/sass/elements/helpers';
+
+// Generic -------------------------------
+// ---------------------------------------
+
+@import 'govuk-elements-sass/public/sass/elements/reset';
+
+// Objects -------------------------------
+// ---------------------------------------
+
+@import 'govuk-elements-sass/public/sass/elements/layout';
+
+// Components ----------------------------
+// ---------------------------------------
+
+// GOV.UK elements
+// These aren't really organised into appropriate layers due to the
+// mixing of concerns.
+
+@import 'govuk-elements-sass/public/sass/elements';
+
+// this contains all the elements
+
+// Base --------------------------------
+// ---------------------------------------
+
+
+// Objects --------------------------------
+// ---------------------------------------
+
+
+// Trumps --------------------------------
+// ---------------------------------------

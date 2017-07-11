@@ -1,0 +1,7 @@
+{
+  "paths": {
+    "dist": "./public/",
+    "assets" : "./assets/",
+    "nodeModules": "./node_modules/"
+  }
+}
